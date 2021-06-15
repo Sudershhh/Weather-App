@@ -1,6 +1,6 @@
 let weather = 
 {
-
+/*Enter your API key */
 apiKey: '',
 
 getWeather : function(city)
