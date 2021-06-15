@@ -1,7 +1,7 @@
 let weather = 
 {
 
-apiKey: '7a4d5e1d1339572f2a5ce07bc2e38c6f',
+apiKey: '',
 
 getWeather : function(city)
 {
