@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./icon.png" />
     <title>Weather App</title>
-
-</head>
-<body>
-    
-<main>
-
-    <section id="container">
+  </head>
+  <body>
+    <main>
+      <section id="container">
         <div class="search-field">
-            <input type="text" class="search" placeholder="Enter City Name" value="">
-            <button class="search-button"><i class="fas fa-search"></i></button>
+          <input
+            type="text"
+            class="search"
+            placeholder="Enter City Name"
+            value=""
+          />
+          <button class="search-button"><i class="fas fa-search"></i></button>
         </div>
 
-        
         <div class="weather-info" hidden>
+          <h2 class="city-info"></h2>
+          <p>Today's Weather</p>
+          <div class="weather-now">
+            <img src="" class="icon" />
+            <h1 class="temp"></h1>
+          </div>
 
-            <h2 class="city-info"></h2>
-            <p>Today's Weather</p>
-            <div class="weather-now">
-                <img src="" class="icon">
-                <h1 class="temp"></h1>
+          <div class="grid">
+            <div class="grid-left">
+              <h3 class="description"></h3>
+              <h3 class="humidity"></h3>
+              <h3 class="wind-speed"></h3>
             </div>
-            
-            <div class="grid">
-                <div class="grid-left">
-                    <h3 class="description"></h3>
-                    <h3 class="humidity"></h3>
-                    <h3 class="wind-speed"></h3>
-                </div>
-                <div class="grid-right">
-                    <h3 class="low"></h3>
-                    <h3 class="high"></h3>
-                    <h3 class="pressure"></h3>
-                </div>
+            <div class="grid-right">
+              <h3 class="low"></h3>
+              <h3 class="high"></h3>
+              <h3 class="pressure"></h3>
             </div>
-            
-
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-</main>
-
-
-<script src="./script.js" defer></script>
-</body>
+    <script src="./script.js" defer type="module"></script>
+  </body>
 </html>
